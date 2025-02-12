@@ -97,3 +97,7 @@ class ContribLoader:
             all_data[cat_name] = contribs
         
         return all_data
+    
+    def __call__(self, initial_offset:int=0)->Dict[str, JSON_LIST]:
+
+        return self.get_all_contribs(initial_offset)
