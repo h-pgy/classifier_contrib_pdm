@@ -1,7 +1,7 @@
 from requests import Session, Response
 from typing import Dict, Any, Optional, Union, Literal
 from ..exceptions import NoContentError
-from ...types.json import JSON_TYPE
+from core.load_data.types.json import JSON_TYPE
 
 class RequestMaker:
 
