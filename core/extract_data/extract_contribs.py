@@ -1,6 +1,6 @@
 from .utils import RequestMaker, UrlBuilder
 from typing import Dict, Optional, Any
-from core.load_data.types import JSON_LIST, BASIC_TYPES
+from core.types import JSON_LIST, BASIC_TYPES
 
 from urllib.parse import urljoin
 from requests.exceptions import HTTPError, ChunkedEncodingError

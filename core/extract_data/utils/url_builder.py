@@ -1,5 +1,5 @@
 from typing import Literal, Optional, Dict, Any
-from core.load_data.types import BASIC_TYPES
+from core.types import BASIC_TYPES
 import re
 
 

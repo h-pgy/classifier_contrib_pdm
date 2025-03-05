@@ -1,3 +1,1 @@
-from .load_contribs import ContribLoader
-
-load_contributions = ContribLoader()
+from .loader import Loader
