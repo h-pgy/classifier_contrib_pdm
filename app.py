@@ -5,9 +5,20 @@ import matplotlib.pyplot as plt
 import joblib
 from core.process_text import process_text
 from config import DATA_DIR
+import nltk
+import spacy
 
 # Carregar o modelo treinado
 model = joblib.load(os.path.join(DATA_DIR, "svc_model.pkl"))
+
+
+# Carregar modelo do spaCy para português
+spacy_nlp = spacy.load("pt_core_news_lg")
+
+#downloading data
+nltk.download('punkt')
+nltk.download('wordnet')
+nltk.download('stopwords')
 
 
 # Configuração do layout do Streamlit
