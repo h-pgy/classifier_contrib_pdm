@@ -25,15 +25,19 @@ class Preprocesser:
 
     def __init__(self):
 
-        self.custom_stopwords: set[str] = self.create_custom_stopwords(self.my_stopwords) 
-        
-        # Carregar modelo do spaCy para português
-        self.spacy_nlp = spacy.load("pt_core_news_lg")
-
         #downloading data
         nltk.download('punkt')
         nltk.download('wordnet')
         nltk.download('stopwords')
+
+        # Carregar modelo do spaCy para português
+        self.spacy_nlp = spacy.load("pt_core_news_lg")
+
+        self.custom_stopwords: set[str] = self.create_custom_stopwords(self.my_stopwords) 
+        
+        
+
+       
 
     def create_custom_stopwords(self, new_stopwords:list[str])->set[str]:
 
